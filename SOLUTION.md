@@ -2,12 +2,12 @@
 
 <!-- You can include documentation, additional setup instructions, notes etc. here -->
 
+ ![image](https://github.com/user-attachments/assets/1e339073-7c93-4c54-831a-ba22cd53d7e2)
+
 	import React, { useEffect, useState } from "react";
 	import Dropdown from "./components/Dropdown.jsx";
 	import states from "./us-states.json";
 	import LastSearches from "./components/LastSearches.jsx";
-
-	![alt text](image.png)
 
 ## APP Component <App />
 App is the main component of the application that manages the state of the search queries for both GitHub users and US states. It handles fetching data from the GitHub API, filtering state data, and managing the user's last 10 searches.
