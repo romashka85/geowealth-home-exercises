@@ -85,13 +85,29 @@ Render:
 Displays an ordered list (<li>) of the last searches.
 If no searches have been performed, it shows a message indicating that there are no searches yet.
 
-Example Usage:
 
-Last 10 searches
-1. California
-2. Texas
-3. Florida
+# Refactors and Enhancements
 
-If no searches have been performed:
+### Refactors
+1. Component Breakdown: The dropdown and input components could be split into smaller, more focused sub-components for better reusability and readability. 
+2. State Management: With more time, I would refactor state management. Using `useReducer` for complex state logic or React Context for global state management
+3. Reuse Logic: The dropdown logic for keyboard navigation and filtering could be extracted into a custom hook.
 
-There is no searches yet
+### Code Organization
+ Folder Structure: 
+   - Refactor to have a clearer folder structure, such as:
+     ```
+     src/
+     ├── components/
+     ├── hooks/
+     ├── services/
+     ├── styles/
+     └── utils/
+     ```
+
+### Enhancements
+1. Error Handling: Implement better error handling, especially around API calls, to provide user feedback in case of errors rather than just logging them to the console.
+2. Performance Optimizations: could be implemented memoization strategy.
+3. Styling Improvements: Introduce dynamic styling solutions using Tailwind.css or optimize the SCSS structure.
+4. User interaction: I would add clicking outside functionality to close the DropDown when clicking outside the dropDown.
+
